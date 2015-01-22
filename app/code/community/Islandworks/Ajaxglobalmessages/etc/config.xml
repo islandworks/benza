@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Islandworks_Ajaxglobalmessages>
+            <version>1.0.0</version>
+        </Islandworks_Ajaxglobalmessages>
+    </modules>
+    
+    <frontend>
+        <layout>
+            <updates>
+                <islandworks_ajaxglobalmessages>
+                    <file>ajaxglobalmessages.xml</file>
+                </islandworks_ajaxglobalmessages>
+            </updates>
+        </layout>
+    </frontend>
+</config>

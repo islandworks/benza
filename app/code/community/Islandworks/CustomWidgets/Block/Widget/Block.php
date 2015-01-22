@@ -1,0 +1,5 @@
+<?php
+class Islandworks_CustomWidgets_Block_Widget_Block extends Islandworks_CustomWidgets_Block_Block implements Mage_Widget_Block_Interface
+{
+
+}

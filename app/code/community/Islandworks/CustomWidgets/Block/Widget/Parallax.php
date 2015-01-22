@@ -1,0 +1,5 @@
+<?php
+class Islandworks_CustomWidgets_Block_Widget_Parallax extends Islandworks_CustomWidgets_Block_Parallax implements Mage_Widget_Block_Interface
+{
+
+}
