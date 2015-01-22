@@ -43,8 +43,15 @@ if($preset==1) {
 <?php echo $this->getChildHtml('head') ?>
 </head>
 <body<?php echo $this->getBodyClass()?' class="header-shadow '.$this->getBodyClass().'"':'' ?>>
+<div id="st-container" class="st-container">
 <div id="notification"></div>
 <?php echo $this->getChildHtml('after_body_start') ?>
+<div class="st-pusher">
+				<nav class="st-menu st-effect-3" id="menu-3">
+					<?php echo $this->getChildHtml('left') ?>
+				</nav>
+	<div class="st-content">
+		<div class="st-content-inner">
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page<?php if($box_shadow): echo" box-shadow"; endif?><?php if(!$background_image): echo" no-background"; endif?>">
@@ -78,7 +85,7 @@ if($preset==1) {
 	                    <?php echo $this->getChildHtml('global_messages') ?>
 	                    <?php echo $this->getChildHtml('content') ?>
 	                </div>
-	                <div class="col-left sidebar col-sm-3 col-sm-pull-9"><?php echo $this->getChildHtml('left') ?></div>
+	                <div class="col-left sidebar col-sm-3 col-sm-pull-9"></div>
 
                 </div>
                 </div>
@@ -89,5 +96,9 @@ if($preset==1) {
     </div>
 </div>
 <?php echo $this->getAbsoluteFooter() ?>
+<!-- .st-content-inner --></div>
+<!-- .st-content --></div>
+<!-- .st-pusher --></div>
+<!-- #st-container --></div>
 </body>
 </html>

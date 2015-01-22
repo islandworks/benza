@@ -184,7 +184,8 @@ class Soczed_Less_Model_Observer
                             if (isset($filesIds[$baseFile])) {
                                 $isNewModel      = false;
                                 $model           = $filesCollection->getItemById($filesIds[$baseFile]);
-                                $oldCache        = $model->getCache();
+                               // $oldCache        = $model->getCache();
+                                $oldCache        = false;
                                 $forceRebuild    = (bool)$model->getForceRebuild();
                                 $customVars      = $model->getCustomVariables();
                                 $useGlobalVars   = (bool)$model->getUseGlobalVariables();

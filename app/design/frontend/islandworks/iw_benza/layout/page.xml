@@ -61,6 +61,7 @@ Default layout, loads most of the pages
 								<action method="addJs"><script>islandworks/easyResponsiveTabs.js</script></action>
 								<action method="addJs"><script>islandworks/jquery.customSelect.js</script></action>
 								<action method="addJs"><script>islandworks/tab.js</script></action>
+								<action method="addJs"><script>islandworks/modernizr.custom.js</script></action>
 								<action method="addJs"><script>islandworks/islandworks.js</script></action>
 							
 								<action method="addItem"><type>skin_js</type><name>lib/colorbox/jquery.colorbox.js</name><params/></action>
@@ -71,17 +72,20 @@ Default layout, loads most of the pages
 				<action method="addCss"><stylesheet>lib/owl-carousel/owl.theme.css</stylesheet></action>
 				
 				<action method="addCss"><stylesheet>bootstrap/css/bootstrap.css</stylesheet></action>
+				<action method="addCss"><stylesheet>css/normalize.css</stylesheet></action>
+				<action method="addCss"><stylesheet>css/offcanvas.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/styles.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/animate.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/megamenu.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/slicknav.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/accordion.css</stylesheet></action>
-                <action method="addCss"><stylesheet>font-awesome/css/font-awesome.min.css</stylesheet></action>
+                <action method="addCss"><stylesheet>css/icon-fonts.min.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/menu.css</stylesheet></action>
                 <action method="addItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
                 <action method="addCss"><stylesheet>css/widgets.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/mega-layout.css</stylesheet></action>
                 <action method="addCss"><stylesheet>css/left-header-layout.css</stylesheet></action>
+                
                 <action method="addCss"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
                  <action method="addCss"><stylesheet>lib/colorbox/colorbox.css</stylesheet></action>
                 <action method="addItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>

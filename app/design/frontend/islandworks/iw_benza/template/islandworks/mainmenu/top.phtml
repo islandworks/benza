@@ -31,7 +31,7 @@ jQuery(document).ready(function(){
 	<div class="islandworks-main-menu">
 		<ul id="islandworks-nav" class="megamenu">
 			<?php if(Mage::getStoreConfig('themeoptions_general/menu/home')){?>
-			<li class="level0 home level-top<?php if($routeName == 'cms' && $identifier == 'home') {echo " active";}?> m-dropdown parent parent">
+			<li class="level0 home level-top<?php if($routeName == 'cms' && $identifier == 'home') {echo " active";}?>">
 				<a href="<?php echo $this->getBaseUrl(); ?>" class="level-top"><span><?php echo $this->__('Home'); ?></span></a>
 			</li> 
 			<?php }?>
