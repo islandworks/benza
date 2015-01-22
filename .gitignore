@@ -126,3 +126,7 @@ skin/frontend/enterprise
 skin/install/
 var/
 skin/frontend/novaworks/nova_bazien/css/custom_designs/
+
+app/etc/modules/Mage_ConfigurableSwatches.xml
+
+lib/Pelago/Emogrifier.php
