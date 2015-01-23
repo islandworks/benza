@@ -1,6 +1,6 @@
 body, .custom-html .block-content p, .my-account .welcome-msg {
   color:#363636;
-  font-family:'Montserrat', sans-serif !important;
+  font-family:'Lato', sans-serif !important;
   font-size:13px;
 }
 a, a:focus { color:#363636; }
@@ -11,10 +11,10 @@ a:hover {
 .wrapper { background-color:#ffffff; }
 .header-1 { color:#9b9b9b; }
 .header-1 .mega-layout-custom-menu a, .header-1 .mega-layout-custom-menu a:focus, .shopping-bag-item a.cart-contents { color:#202020; }
-h1, h2, h3, h4, h5, h6, #default-menu #nav li a, #wide-menu #nav > li > a, #wide-menu #nav ul.level0 > li > a, .footer-info-top .footer-info li, .footer-info-container .footer-info .about-responsive h4, .footer-info .newsletter-box .form-subscribe-header, .bottom-menu-column h4, .footer-aditional .facebook h4, .footer-aditional .twitter h4, .category-title h1, .home-content h3.title, .who-we-are h1, .main .col-main .page-title h1, .col-main .cart-empty a, .about-content .wel-come h2, .about-content .center-title h1, .about-content h2, .afew-container .retina-ready h3, .afew-container .mobile-friendly h3, .afew-container .wide-or h3, .afew-container .responsive-layout h3, .post-list-item h2 a { font-family:'Montserrat', sans-serif; }
+h1, h2, h3, h4, h5, h6, #default-menu #nav li a, #wide-menu #nav > li > a, #wide-menu #nav ul.level0 > li > a, .footer-info-top .footer-info li, .footer-info-container .footer-info .about-responsive h4, .footer-info .newsletter-box .form-subscribe-header, .bottom-menu-column h4, .footer-aditional .facebook h4, .footer-aditional .twitter h4, .category-title h1, .home-content h3.title, .who-we-are h1, .main .col-main .page-title h1, .col-main .cart-empty a, .about-content .wel-come h2, .about-content .center-title h1, .about-content h2, .afew-container .retina-ready h3, .afew-container .mobile-friendly h3, .afew-container .wide-or h3, .afew-container .responsive-layout h3, .post-list-item h2 a { font-family:'Lato', sans-serif; }
 h1, h2, h3, h4, h5, h6, .home-content h3.title, .who-we-are h1, .footer-info .newsletter-box .form-subscribe-header, .cart-accordion-heading .cart-accordion-toggle, .who-we-are h1.title, .who-we-are h2 { color:#363636 !important; }
 h5, h5 a, h3 a, #menubar-controls a { color:#363636; }
-.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, .a-few-features a:hover, #toTop { background-color:#ef5c47; }
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:active, button:active, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, .header-menu ul.menu li.shopping-bag-item .cart-contents .amount, .a-few-features a:hover, #toTop { background-color:#ef5c47; }
 .header-container { background-color:#e4deda; }
 .header-bottom { background-color:#f44f2d; }
 .header-bottom #search_mini_form { background-color:#e2300c; }
@@ -218,5 +218,5 @@ a.islandworks-button-light:hover, a.islandworks-button-dark:hover, .box-icon .bo
 .footer-container h1, .footer-container h2, .footer-container h3, .footer-container h4, .footer-container h5 { color:#363636 !important; }
 .footer-info-container .footer-info .nova-footer-info .nova-footer-box2 .col-md-7 p.post { border-bottom:1px solid #ffffff; }
 #twitter_update_list li { border-bottom:1px solid #f0f0f0; }
-.tp-caption.big_orange, .tp-caption.medium_grey { font-family:'Montserrat', sans-serif !important; }
+.tp-caption.big_orange, .tp-caption.medium_grey { font-family:'Lato', sans-serif !important; }
 .nova-widget-style-mega-style h4.spb_heading { border-color:#ef5c47; }

@@ -12,15 +12,14 @@
 <?php $_cartQty = $this->getSummaryCount() ?>
 <li class="parent shopping-bag-item">
 	<a class="cart-contents" href="<?php echo $this->getUrl('checkout/cart') ?>" title="<?php echo $this->__('View contents of your shopping cart') ?>">
-		<i class="fa fa-shopping-cart"></i>
-		<span class="labels"><?php echo $this->__('SHOPPING CART') ?></sapn>
-		<span class="amount">		
-			<?php if($_cartQty==0):?>
-			<span><?php echo '(0)'?></span>					
-			<?php else: ?>
-			    <span><?php echo '('.$_cartQty.')'?><?php echo $this->__(' for ') ?><?php echo Mage::helper('checkout')->formatPrice($this->getSubtotal()); ?></span>	
+		<i class="icomoon-cart2"></i>
+				<span class="labels"><?php echo $this->__('Cart') ?></sapn>	
+			<?php if($_cartQty > 0):?>
+			<span class="amount"> 
+			    <span><?php echo $_cartQty?></span>	
+			</span>
 			<?php endif ?>
-		</span>
+		
 	</a>
     <?php $_items = $this->getRecentItems(); ?>
 	<ul class="sub-menu">
