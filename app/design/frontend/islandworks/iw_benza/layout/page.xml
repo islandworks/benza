@@ -108,7 +108,7 @@ Default layout, loads most of the pages
                    <!-- <block type="page/html_topmenu" name="catalog.topnav" template="page/html/topmenu.phtml"/> -->
                     <block type="megamenu/mainmenu_menu" name="catalog.topnav.menu" template="islandworks/mainmenu/top.phtml"/>
                 </block>
-                <block type="catalog/product_compare_sidebar" name="compare_dropdown" template="catalog/product/compare/dropdown.phtml"/>
+                <block type="catalog/product_compare_sidebar" name="compare_dropdown" template="catalog/product/compare/mini_compare.phtml"/>
                 <block type="catalog/product_new" name="home.gallery" alias="home_gallery" template="page/html/home-gallery.phtml" />
                 <block type="catalog/product_new" name="home.content" alias="home_content" template="page/html/home-content.phtml" />
                 <block type="page/html_wrapper" name="top.container" as="topContainer" translate="label">

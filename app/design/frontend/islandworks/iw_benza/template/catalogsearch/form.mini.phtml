@@ -27,8 +27,9 @@
 /* @var $catalogSearchHelper Mage_Catalogsearch_Helper_Data */
 $catalogSearchHelper =  $this->helper('catalogsearch');
 ?>
-<li class="menu-search no-hover">
-	<a href="#"><i class="fa fa-search"></i></a>
+<li class="parent menu-search no-hover">
+	<a href="#"><i class="fa fa-search"></i><span class="labels"><?php echo $this->__('Search') ?></span>	
+</a>
 	<ul class="sub-menu">
 		<li>
 			<div class="ajax-search-wrap">
@@ -38,26 +39,6 @@ $catalogSearchHelper =  $this->helper('catalogsearch');
 					<script type="text/javascript">
 					//<![CDATA[
 					    var searchForm = new Varien.searchForm('search_mini_form', 'search', '<?php echo $this->__('Search entire store here...') ?>');
-					    searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
-					//]]>
-					</script>
-				</form>
-			</div>
-		</li>
-	</ul>
-</li>
-
-<li class="menu-search-3 no-hover">
-	<a href="#"><?php echo $this->__('Go') ?></a>
-	<ul class="sub-menu">
-		<li>
-			<div class="ajax-search-wrap">
-				<form id="search_mini_form_3" action="<?php echo $catalogSearchHelper->getResultUrl() ?>" method="get">
-					<input id="search_3" type="text" name="<?php echo $catalogSearchHelper->getQueryParamName() ?>" value="<?php echo $catalogSearchHelper->getEscapedQueryText() ?>" class="input-text" maxlength="<?php echo $catalogSearchHelper->getMaxQueryLength();?>" />
-					<div id="search_autocomplete_3" class="search-autocomplete"></div>
-					<script type="text/javascript">
-					//<![CDATA[
-					    var searchForm = new Varien.searchForm('search_mini_form_3', 'search_3', '<?php echo $this->__('Search') ?>');
 					    searchForm.initAutocomplete('<?php echo $catalogSearchHelper->getSuggestUrl() ?>', 'search_autocomplete');
 					//]]>
 					</script>

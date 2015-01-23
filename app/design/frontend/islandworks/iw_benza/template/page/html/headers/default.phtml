@@ -118,13 +118,13 @@ if ($block_top_bar_left || $block_top_bar_right):
 				</div>
 				<div class="header-right col-md-4 col-sm-4">
 					<div class="row">
-					<div class="col-md-12">
-					<a class="tools_button" data-effect="st-effect-3">
-                     <span class="tools_button_icon"><i class="fa fa-bars"></i></span>
-                     </a>
-					</div>	
 					<nav class="header-menu col-md-12">
 						<ul class="menu">
+						<!--<li><a class="tools_button" data-effect="st-effect-3">
+                     <span class="tools_button_icon"><i class="fa fa-bars"></i></span>
+                     </a></li>-->
+							<?php echo $this->getChildHtml('topSearch') ?>
+							<?php echo $this->getChildHtml('compare_dropdown') ?>
 							<?php echo $this->getChildHtml('top_cart_sidebar') ?>
 						</ul>
 					</nav>
@@ -142,15 +142,6 @@ if ($block_top_bar_left || $block_top_bar_right):
 					<?php echo $this->getChildHtml('topMenu') ?>							
 				</div>
 
-				<!-- Search-col -->
-				<div class="header-right">
-					<nav>
-						<ul class="menu">
-							<?php echo $this->getChildHtml('topSearch') ?>
-						</ul>
-					</nav>
-				</div>
-				<!-- End Search-col -->
 
 			</div>
 		</div>
