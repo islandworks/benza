@@ -102,15 +102,14 @@ h5, h5 a, h3 a, #menubar-controls a
 .circle-hover .circle-background { 
 	background-color: @active_color;
 }
-.owl-theme .owl-controlls .owl-buttons div {
-	color: #F7F7F7;
-	background: @buttons_color;
+.product-flexslider .owl-controlls .owl-buttons div:hover {
+	border-color: @buttons_color;
 }
-.owl-theme .owl-controlls .owl-buttons div:hover{
-  color: #F7F7F7;
-  &:hover {
-    color: @active_color !important;
-  }
+.product-flexslider .owl-controlls .owl-buttons div:before{
+    color: #202020 !important;
+    &:hover {
+	   color: @active_color !important;  
+    }
 }
 .block-newsletter .input-box button.button {
     background-color: @buttons_hover_color;

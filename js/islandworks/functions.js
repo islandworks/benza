@@ -484,33 +484,10 @@
 			
 		}
 	};
-	var product = {
-		init: function () {
-			if (jQuery.fn.imagesLoaded) {	
-				product.productResize();
-				jQuery(window).smartresize(function(){  
-					product.productResize();
-				});
-			}
-		},
-		productResize: function() {
-			
-			jQuery('.nova-widget-style-').imagesLoaded(function() {
-				
-				var productImageHeight = jQuery(this).find('.item-product-image-box img').height();
-				console.log(productImageHeight);
-				jQuery(this).find('.owl-prev').css('height', productImageHeight  + 'px');
-				jQuery(this).find('.owl-next').css('height', productImageHeight  + 'px');
-			});
-			
-			
-		}
-	};
 	var onReady = {
 		init: function(){
 			header.init();
 			nav.init();
-			product.init();
 		}
 	};
 	var onLoad = {
