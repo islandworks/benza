@@ -39,27 +39,26 @@
 	$selected_lang_code = $this->getCurrentStoreCode();
 	$selected_lang_name = Mage::app()->getStore()->getName();
 ?>
-<div class="lang-switcher">
-	<p class="label"><?php echo $this->__('Language')?></p>
-<!-- <p class="text"><img src="<?php echo $this->getSkinUrl('images/flags/'.$selected_lang_code.'.png'); ?>" alt="<?php echo $selected_lang_name ?>"></p> -->
-<div>
-	<?php
+<li class="parent aux-currency"><a href="#"><?php echo $selected_lang_name ?></a>    
+    <?php
+		$selectedCurrency;
+		$out = '<ul class="sub-menu" id="header-currency">';
 		foreach($this->getStores() as $_lang)
 		{
 			$lang_name = $this->__($this->htmlEscape($_lang->getName()));
 			$lang_id = $_lang->getId();
-			$lang_img = $this->getSkinUrl('images/flags/'.$_lang->getCode().'.png');
 			if($lang_id == $this->getCurrentStoreId())
 			{
 				$selected_lang = $lang_name;
-				echo '<div class="flag"><img src="'.$lang_img.'" alt="'.$lang_name.'"></div>';
+				$out .= '<li><div class="current-currency"><span class="currency name">'. $lang_name .'</span></div></li>';
 			}
 			else
-				echo '<div class="flag"><a href="'. $_lang->getCurrentUrl() .'"><img src="'.$lang_img.'" alt="'.$lang_name.'"></a></div>';
-		}		
-	?>
-</div>	        	
-</div>
+				$out .= '<li><a href="'. $_lang->getCurrentUrl() .'"><span class="currency name">'. $lang_name .'</span></a></li>';
+		}
+		$out .= '</ul>';
+		print $out;
+	?>        	
+</li>
 <?php endif; ?>
 
 
