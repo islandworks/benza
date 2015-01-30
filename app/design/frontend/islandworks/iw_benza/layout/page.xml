@@ -53,6 +53,7 @@ Default layout, loads most of the pages
 								<action method="addJs"><script>islandworks/jquery-noconflict.js</script></action>
 								<action method="addJs"><script>islandworks/jquery.easing.1.3.js</script></action>
 								<action method="addJs"><script>islandworks/jquery.transit.min.js</script></action>
+                                <action method="addJs"><script>islandworks/jpreloader.min.js</script></action>
 								<action method="addJs"><script>islandworks/modal.js</script></action>
 								<action method="addJs"><script>islandworks/waypoints.min.js</script></action>
 								<action method="addJs"><script>islandworks/lib/owl-carousel/owl.carousel.min.js</script></action> 

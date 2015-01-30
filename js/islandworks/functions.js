@@ -482,12 +482,26 @@
 			fullscreenMap.find('.map-canvas').css('width', windowWidth);
 			fullscreenMap.css('margin-left', '-' + mapOffset + 'px');
 			
+		},
+		
+	};
+	var elements = {
+		PreLoader:function () {
+			jQuery('body').jpreLoader({
+			    	   showPercentage:true,
+			    	   loaderVPos:"50%",
+			    	   splashVPos: 0,
+						autoClose: true,
+			    	}, function() {
+			    		//jQuery('.gt-map-content').toggle(0);
+			});			
 		}
 	};
 	var onReady = {
 		init: function(){
 			header.init();
 			nav.init();
+			elements.PreLoader();
 		}
 	};
 	var onLoad = {
